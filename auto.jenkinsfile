@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Testing our python calculator') {
+            steps {
+                powershell 'python Cal.py'
+            }
+        }
+    }
+}
