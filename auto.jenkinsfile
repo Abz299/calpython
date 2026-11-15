@@ -5,6 +5,7 @@ pipeline {
         stage('Testing our python calculator') {
             steps {
                 powershell 'python Cal.py'
+                echo ("Running...")
             }
         }
     }
