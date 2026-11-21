@@ -1,10 +1,30 @@
 pipeline {
     agent any
     
+    //SEQUENTIAL
+
     stages {
         stage('Testing our python calculator') {
             steps {
-                powershell 'python Cal.py'
+                powershell 'python CalA.py'
+                echo ("Running...")
+            }
+        }
+        stage('Testing our python calculator') {
+            steps {
+                powershell 'python CalB.py'
+                echo ("Running...")
+            }
+        }
+        stage('Testing our python calculator') {
+            steps {
+                powershell 'python CalC.py'
+                echo ("Running...")
+            }
+        }
+        stage('Testing our python calculator') {
+            steps {
+                powershell 'python CalD.py'
                 echo ("Running...")
             }
         }
