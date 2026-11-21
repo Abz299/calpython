@@ -4,25 +4,25 @@ pipeline {
     //SEQUENTIAL
 
     stages {
-        stage('Testing our python calculator') {
+        stage('Testing our python calculator A +') {
             steps {
                 powershell 'python CalA.py'
                 echo ("Running...")
             }
         }
-        stage('Testing our python calculator') {
+        stage('Testing our python calculator B -') {
             steps {
                 powershell 'python CalB.py'
                 echo ("Running...")
             }
         }
-        stage('Testing our python calculator') {
+        stage('Testing our python calculator C * ') {
             steps {
                 powershell 'python CalC.py'
                 echo ("Running...")
             }
         }
-        stage('Testing our python calculator') {
+        stage('Testing our python calculator D /') {
             steps {
                 powershell 'python CalD.py'
                 echo ("Running...")
